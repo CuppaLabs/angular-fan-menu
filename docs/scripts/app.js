@@ -10,12 +10,6 @@
  */
 angular
   .module('fanMenuApp', [
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'circularMenu-directive'
   ])
   .controller('macMenuController',function($scope){
