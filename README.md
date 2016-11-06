@@ -24,7 +24,7 @@ View the [Demo here](https://cuppalabs.github.io/angular-fan-menu).
 
                       OR
 
-- Download the .zip folder from this repository
+- `Clone` this repository and setup with the below instructions.
 
 ### Usage
 
@@ -126,16 +126,16 @@ Once the directive attribute is added to the element, it can be configured with 
 
 ### Config Object Properties
 
-|Property|Type|Required|Default|Description|
-|:--- |:--- |:--- |:--- |:--- |
-|`buttonWidth`|Number|YES|`''`| Width of the menu button. |
-|`menuRadius`|Number|YES|`''`| The radius of the menu wings from the center of the button. |
-|`color`|Hex Code|YES|`''`| Button color. Hex color code.|
-|`offset`|Number|YES|`''`| The gap between the menu button and the menu item wings.|
-|`textColor`|Hex Code|YES|`''`| Button text color. Hex color code. |
-|`showIcons`|Boolean|YES|`''`| To show or hide icons along with the text in menu item wing.|
-|`gutter`|Object|YES|`''`| The space between the menu and the bounderies of the page window. The object can have four properties `left`, `right`, `top`, `bottom` with values to be defined in Number|
-|`angles`|Object|YES|`''`| The angle at which the menu opens when clicked. It can be configured to open at different angles when placed at different places. The value of the angle can be a number between 0 -360 |
+|Property|Type|Required|Description|
+|:--- |:--- |:--- |:--- |
+|`buttonWidth`|Number|YES | Width of the menu button. |
+|`menuRadius`|Number|YES| The radius of the menu wings from the center of the button. |
+|`color`|Hex Code|YES|Button color. Hex color code.|
+|`offset`|Number|YES|The gap between the menu button and the menu item wings.|
+|`textColor`|Hex Code|YES| Button text color. Hex color code. |
+|`showIcons`|Boolean|YES|To show or hide icons along with the text in menu item wing.|
+|`gutter`|Object|YES|The space between the menu and the bounderies of the page window. The object can have four properties `left`, `right`, `top`, `bottom` with values to be defined in Number|
+|`angles`|Object|YES| The angle at which the menu opens when clicked. It can be configured to open at different angles when placed at different places. The value of the angle can be a number between 0 -360 |
 
 ### Data Array - Menu Item Object Properties
 
@@ -143,18 +143,25 @@ Once the directive attribute is added to the element, it can be configured with 
 
 - menuObject {} properties
 
-|Property|Type|Required|Default|Description|
-|:--- |:--- |:--- |:--- |:--- |
-|`title`|String|YES|`''`| Title of the menu item. |
-|`color`|Hex Code|YES|`''`| Background color of the wing. |
-|`rotate`|Number|YES|`''`| Initial angle of the wing. Default to Zero. |
-|`show`|Boolean|YES|`''`| Show or hide the wing. |
-|`titleColor`|Hex Code|YES|`''`| Text color of the title. |
-|`icon`|Object|YES|`''`| Icon object properties. {"color":"#fff","name":"fa fa-tablet","size": 35} |
+|Property|Type|Required|Description|
+|:--- |:--- |:--- |:--- |
+|`title`|String|YES| Title of the menu item. |
+|`color`|Hex Code|YES| Background color of the wing. |
+|`rotate`|Number|YES| Initial angle of the wing. Default to Zero. |
+|`show`|Boolean|YES| Show or hide the wing. |
+|`titleColor`|Hex Code|YES| Text color of the title. |
+|`icon`|Object|YES| Icon object properties. {"color":"#fff","name":"fa fa-tablet","size": 35} |
 
 ## Build & development
 
-Run `grunt build` for building and `grunt serve` for preview.
+If you want develope and build on this component, there are some quick steps for that.
+
+  - `clone` the git repository to your local
+  - run `npm install` to download and install all the development dependencies.
+  - run `bowerinstall` to download all the front end developemnt dependencies.
+  - run `grunt serve` to start the server and get the app up and running. It automatically opens a browser window instance, with the app     runnning. 
+  - run `grunt build` to generate production ready code in dist folder.
+  
 
 ## Licence
 
