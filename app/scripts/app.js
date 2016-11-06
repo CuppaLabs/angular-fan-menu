@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('fanMenuApp', [
+  .module('demoApp', [
     'ngCookies',
     'ngMessages',
     'ngResource',
@@ -18,7 +18,7 @@ angular
     'ngTouch',
     'circularMenu-directive'
   ])
-  .controller('macMenuController',function($scope){
+  .controller('demoAppController',function($scope){
 
 $scope.menuConfig = {
   "buttonWidth": 60,
