@@ -13,7 +13,7 @@ Cuppa Angular Fan Menu is an `angular 1 directive` for cool menu componet for we
 
 View the [Demo here](https://cuppalabs.github.io/angular-fan-menu).
 
-Click here for [JSFiddle](https://jsfiddle.net/solomon301/3kzjw3dk/).
+[Click here](https://jsfiddle.net/solomon301/3kzjw3dk/) for JSFiddle.
 
 ![www.cuppalabs.com](https://raw.githubusercontent.com/CuppaLabs/angular-fan-menu/master/app/images/fan-menu-banner.png)
 
