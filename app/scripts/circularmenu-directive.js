@@ -19,7 +19,7 @@ angular.module("circularMenu-directive",[]).directive("dragCircularMenu",functio
 		'<div ng-repeat="wing in wings" class="{{positionClass}} {{open}} {{rotate}}" style="pointer-events:none;width:{{width}}px;height:{{height}}px;position:absolute;transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);transform-origin: 0px {{height/2}}px;transform:rotate({{wing.rotate}}) scale({{wing.show}});cursor:pointer;">'+ 
 		'<svg ng-attr-width="{{width}}px" ng-attr-height="{{height}}px" >'+
 		'<path ng-attr-d="{{path}}" style="fill:{{wing.color}};pointer-events:auto;" ng-click="wingClick(wing)" ng-mouseover="hoverIn(wing,$event)" ng-mouseleave="hoverOut(wing,$event)"></path>'+
-		'<text ng-if="!button.onlyIcon" class="wing-text" style="fill:{{wing.titleColor}};font-size: 14px;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);" x="48%" y="50%" dominant-baseline="middle" text-anchor="right" letter-spacing="2px" ng-attr-transform="rotate(0)">{{wing.title}}</text>'+
+		'<text ng-if="!button.onlyIcon" class="wing-text" style="fill:{{wing.titleColor}};font-size: 14px;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);" x="48%" y="50%" dominant-baseline="middle" text-anchor="{{textAnchor}}" letter-spacing="2px" ng-attr-transform="rotate({{initialTextAngle}},{{width/2}},{{height/2}})">{{wing.title}}</text>'+
 		'</svg>'+
 		'<i ng-if="button.showIcons" style="color:{{wing.icon.color}};text-align:center;font-size:{{wing.icon.size}}px;width:{{wing.icon.size}}px;height: {{wing.icon.size}}px;transform-origin: 50% 50%;transform: translate({{iconX}}px, -{{iconY}}px) rotate(-{{wing.rotate}})" class="fa {{wing.icon.name}}"></i>'+
 		'</div>'+
@@ -50,6 +50,12 @@ angular.module("circularMenu-directive",[]).directive("dragCircularMenu",functio
 			scope.open = "menuclose";
 			scope.jumpAnim  = "";
 			scope.rotate = "";
+			scope.initialTextAngle = 0;
+			scope.textAnchor = "left";
+			if(scope.positionClass == "topRight" || scope.positionClass == "bottomRight"){
+							scope.initialTextAngle = 180;
+							scope.textAnchor = "middle";
+						}
 			elem[0].children[0].children[0].style.transform = "scale(1)";
 			elem[0].children[0].children[1].style.transform = "scale(0)";
 			var windowElement = angular.element(window)[0];
