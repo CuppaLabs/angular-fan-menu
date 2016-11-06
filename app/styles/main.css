@@ -54,6 +54,15 @@ iframe{
 .nav-pills > li > a{
   font-weight: 300;
 }
+.bt-group{
+  padding: 25px 0px;
+}
+.bt-group .btn {
+    background: -webkit-linear-gradient(#42a1ec, #0070c9);
+    background: -o-linear-gradient(#42a1ec, #0070c9);
+    background: linear-gradient(#42a1ec, #0070c9);
+    border: none;
+}
 /*svg text {
    font-family: FontAwesome;
    font-size: 45px;
