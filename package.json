@@ -1,6 +1,5 @@
 {
   "name": "cuppa-angular-menu",
-  "private": false,
   "version": "1.0.0",
   "description": "A cool Angular Menu for web and mobile. ",
   "keywords": [
@@ -39,13 +38,5 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CuppaLabs/angular-fan-menu.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CuppaLabs/angular-fan-menu/issues"
-  },
-  "homepage": "https://github.com/CuppaLabs/angular-fan-menu#readme"
+  }
 }
