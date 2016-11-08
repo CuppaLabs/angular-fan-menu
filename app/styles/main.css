@@ -63,6 +63,9 @@ iframe{
     background: linear-gradient(#42a1ec, #0070c9);
     border: none;
 }
+.ad-section{
+  display: block;
+}
 /*svg text {
    font-family: FontAwesome;
    font-size: 45px;
