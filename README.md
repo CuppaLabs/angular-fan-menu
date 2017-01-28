@@ -8,7 +8,6 @@ Cuppa Angular Fan Menu is an `angular 1 directive` for cool menu componet for we
 - Touch enabled
 - Cool fan effect transitions
 
-
 ## Demo
 
 View the [Demo here](https://cuppalabs.github.io/angular-fan-menu).
